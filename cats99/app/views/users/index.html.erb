@@ -1,0 +1,9 @@
+<h1>All the users!!!</h1>
+<% @users.each do |user| %>
+  <ul>
+    <li>username:<%= user.username %></li>
+    <li>password_digest:<%= user.password_digest %></li>
+    <li>session_token:<%= user.session_token %></li>
+  </ul>
+  <br>
+<% end %>
